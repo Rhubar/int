@@ -1,0 +1,30 @@
+/* Style the buttons that are used to open and close the accordion panel */
+.accordionTitle {
+    background-color: #ffffff;
+    color:gray;
+    cursor: pointer;
+    padding: 8px;
+    width: 90%;
+    border-radius:4px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin: auto;
+  }
+  
+  .activeDiv {
+    float:right;
+    margin-top:-20px;
+  }
+
+  /* accordion panel */
+  .accordionContent {
+    padding: 8px;
+    background-color: white;
+    color: #000000;
+    border-radius:4px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    width: 90%;
+    margin: auto;
+  }
+

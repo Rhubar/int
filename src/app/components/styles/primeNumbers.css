@@ -1,0 +1,51 @@
+/* main div */
+.primeDiv{
+    background-color:gray;
+    min-height:70vh;
+    text-align:center;
+    width:60vh;
+    border-radius:4px;
+    color:#ffffff;
+    padding:5px;
+}
+
+/* accordion */
+.primeAccordion{
+    padding-top:4vh;
+}
+
+/* prime number checker */
+.primeFinder {
+padding:10vh;
+}
+
+.explain{
+    background-color:rgb(155, 154, 154);
+    border-radius:3px;
+}
+
+/* background */
+.primeBackground {
+    background-image: url("../assets/primeBackground.png");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.primeBackColor{
+    background-color: #ffffff;
+    background-size: cover;
+    opacity: 0.9;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
