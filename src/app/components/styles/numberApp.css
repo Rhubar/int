@@ -18,3 +18,11 @@
     border-top-right-radius: 4px;
     border-top-left-radius: 4px;
 }
+
+.modButton{
+    background-color:rgb(185, 233, 213);
+    border-style:none;
+    padding:4px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}

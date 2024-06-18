@@ -46,7 +46,6 @@ export default function GCD(props) {
           <Accordion title={titleWhy} content={contentWhy} />
         </div>
         <div className="gcdFinder">
-          <p></p>
           <GCDfinder />
         </div>
         <div className="gcdExplain">

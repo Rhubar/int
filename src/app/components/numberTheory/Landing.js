@@ -6,6 +6,7 @@ export default function Landing(props) {
     return (
         <div className="landingDiv">
             <h1>Number Theory</h1>
+            <br/>
             <p>Click one of the tabs on top to get started!</p>
         </div>
     );
