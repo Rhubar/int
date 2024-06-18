@@ -1,0 +1,20 @@
+.numberApp{
+    padding:5vh;
+}
+
+.primeButton{
+    background-color:gray;
+    color:#ffffff;
+    border-style:none;
+    padding:4px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+.gcdButton{
+    background-color:rgb(255, 249, 194);
+    border-style:none;
+    padding:4px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}

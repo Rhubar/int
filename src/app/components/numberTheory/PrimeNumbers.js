@@ -1,10 +1,9 @@
-"use client";
 import React from "react";
 import "../styles/primeNumbers.css";
 import Accordion from "../Accordion";
 import PrimeFinder from "./PrimeFinder";
 
-function PrimeNumbers() {
+function PrimeNumbers(props) {
   // data for accordions
   const titleWhat = "What are they?";
   const contentWhat = (
@@ -29,6 +28,7 @@ function PrimeNumbers() {
     </p>
   );
 
+if (props.topic === "prime"){
   return (
     <div className="primeDiv">
       <div className="primeBackground"></div>
@@ -43,12 +43,13 @@ function PrimeNumbers() {
       <div className="primeFinder">
         <PrimeFinder />
       </div>
-      <div className="explain">
+      <div className="primeExplain">
         <p>Enter a number greater than 1 to check if it's a prime number</p>
-        <br/><p>This works by checking every number up to yours, to see if your number can be divided by any of them with no remainder</p>
+        <br/><p>This works by checking if your number can be divided by any other smaller number with no remainder</p>
       </div>
     </div>
   );
+}
 }
 
 export default PrimeNumbers;
