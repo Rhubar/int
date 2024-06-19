@@ -2,31 +2,54 @@
     padding:5vh;
 }
 
+/* tabs */
+
 .primeButton{
     background-color:gray;
     color:#ffffff;
     border-style:none;
-    padding:1vh;
+    padding-top:1vh;
+    padding-bottom:1vh;
     font-size:15px;
+    font-weight:bold;
     border-top-right-radius: 4px;
     border-top-left-radius: 4px;
+    width:33.33%;
 }
 
 .gcdButton{
     background-color:rgb(255, 249, 194);
     border-style:none;
-    padding:1vh;
+    padding-top:1vh;
+    padding-bottom:1vh;
     border-top-right-radius: 4px;
     border-top-left-radius: 4px;
     font-size:15px;
+    font-weight:bold;
+    width:33.33%;
 }
 
 .modButton{
     background-color:rgb(185, 233, 213);
     border-style:none;
-    padding:1vh;
+    padding-top:1vh;
+    padding-bottom:1vh;
     font-size:15px;
+    font-weight:bold;
     border-top-right-radius: 4px;
     border-top-left-radius: 4px;
     color:#054205;
+    width:33.34%;
+}
+
+/* input styles */
+input{
+    width:15vh;
+}
+
+/* remove arrows from input boxes */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }

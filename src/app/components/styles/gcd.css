@@ -6,6 +6,8 @@
     border-radius:4px;
     color:#000000;
     padding:5px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
 }
 
 .gcdAccordion{
@@ -18,16 +20,16 @@
 }
 
 .gcdExplain{
-    background-color:rgb(252, 247, 222);
+    background-color:rgb(255, 248, 216);
     border-radius:3px;
 }
 
 .gdcBackground {
-    background-image: url("../assets/GCDbackground.png");
+    background-image: url("../assets/gcdBackground.png");
     background-color: #cccccc;
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     z-index: -1;
@@ -39,7 +41,7 @@
     opacity: 0.9;
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     z-index: -1;

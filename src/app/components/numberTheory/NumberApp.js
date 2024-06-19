@@ -29,7 +29,7 @@ function NumberApp() {
           Prime Numbers
         </button>
         <button className="gcdButton" onClick={gcdClick}>
-          Greatest Common Divisors
+          GCD
         </button>
         <button className="modButton" onClick={modClick}>Modular Arithmetic</button>
       </div>

@@ -1,5 +1,6 @@
 import "../styles/mod.css";
 import Accordion from "../Accordion";
+import ModulusCalculator from './ModulusFinder'
 
 function ModularArithmetic(props) {
   // accordion data
@@ -8,7 +9,7 @@ function ModularArithmetic(props) {
     <p>
       Modular arithmetic is a type of arithmetic where numbers "wrap around" after they
       reach a certain value — the modulus. For example, think of an analogue
-      clock. 3 hours after 11 is 2, since after reaching 12 it resets to 0.
+      clock. 3 hours after 11 is 2, since after reaching 12 it resets to 0
     </p>
   );
   const titleWhy = "Why is it important?";
@@ -30,8 +31,7 @@ function ModularArithmetic(props) {
       Algorithms: To keep integers within a fixed range to prevent overflow
     </p>
   );
-
-//  to do: interactive - find modulus of two numbers? 
+ 
   if (props.topic === "mod") {
     return (
       <div className="modDiv">
@@ -43,6 +43,15 @@ function ModularArithmetic(props) {
         </div>
         <div className="modAccordion">
           <Accordion title={titleWhy} content={contentWhy} />
+        </div>
+        <div className="modCalculator">
+          <h4>Modulus Calculator</h4>
+          <br />
+          <ModulusCalculator />
+        </div>
+        <div className="modExplain">
+          <p>Input 2 numbers to find their modulus</p>
+          <br/><p>This works by dividing the first number by the second and returning the remainder</p>
         </div>
       </div>
     );

@@ -29,7 +29,6 @@ function GCDFinder() {
 
   return (
     <div>
-      <h4>Greatest Common Divisor Finder</h4>
       <input
         type="number"
         value={number1}

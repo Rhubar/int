@@ -41,6 +41,8 @@ if (props.topic === "prime"){
         <Accordion title={titleWhy} content={contentWhy} />
       </div>
       <div className="primeFinder">
+      <h4>Prime Number Checker</h4>
+      <br />
         <PrimeFinder />
       </div>
       <div className="primeExplain">
