@@ -17,5 +17,8 @@ then run the development server:
 
 npm run dev
 
-
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+or check it out in production! thanks vercel
+
+## https://int-neon.vercel.app/
