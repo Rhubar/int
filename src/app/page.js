@@ -11,17 +11,6 @@ export default function Home() {
         <br />
         <h2>The Number Theory App is done!</h2>
       </div>
-      <div className={styles.description}>
-        <div className={styles.description}>
-          <p>This is a project built in React.js using the Next.js framework</p>
-        </div>
-        <div className={styles.description}>
-          <p>
-            It is a cool web-based interactive tool that allows users to explore
-            various number theory concepts and set operations
-          </p>
-        </div>
-      </div>
     </main>
   );
 }
