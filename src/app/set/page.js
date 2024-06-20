@@ -8,8 +8,7 @@ export default function Page() {
       <br/>
       <br/>
       <br/>
-      <br/>
-      <h1>Set Operations page under construction</h1>
+      <h1>{" "}Set Operations page under construction</h1>
     </div>
   );
 }
