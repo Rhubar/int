@@ -1,83 +1,83 @@
-.numberApp{
-    padding:5vh;
+.numberApp {
+  padding: 5vh;
 }
 
 /* tabs */
 
 .tab {
-    border-style:none;
-    padding-top:1vh;
-    padding-bottom:1vh;
-    font-size:15px;
-    font-weight:bold;
-    border-top-right-radius: 6px;
-    border-top-left-radius: 6px;
-    width:33.33%;
+  border-style: none;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  font-size: 15px;
+  font-weight: bold;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+  width: 33.33%;
 }
 
-.primeTab{
-    background-color:gray;
-    color:#ffffff;
+.primeTab {
+  background-color: gray;
+  color: #ffffff;
 }
 
-.gcdTab{
-    background-color:rgb(255, 249, 194);
+.gcdTab {
+  background-color: rgb(255, 249, 194);
 }
 
-.modTab{
-    background-color:rgb(185, 233, 213);
-    color:#054205;
-    width:33.34%;
+.modTab {
+  background-color: rgb(185, 233, 213);
+  color: #054205;
+  width: 33.34%;
 }
 
 /* main divs */
 
-.mainDiv{
-    min-height:70vh;
-    text-align:center;
-    width:60vh;
-    border-radius:6px;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    padding:5px;
+.mainDiv {
+  min-height: 70vh;
+  text-align: center;
+  width: 60vh;
+  border-radius: 6px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  padding: 5px;
 }
 
-.landingDiv{
-    background-color:rgb(238, 230, 250);
-    color:rgb(36, 11, 73);
+.landingDiv {
+  background-color: rgb(238, 230, 250);
+  color: rgb(36, 11, 73);
 }
 
-.primeDiv{
-    background-color:gray;
-    color:#ffffff;
+.primeDiv {
+  background-color: gray;
+  color: #ffffff;
 }
 
-.modDiv{
-    background-color:rgb(185, 233, 213);
-    color:#054205;
+.modDiv {
+  background-color: rgb(185, 233, 213);
+  color: #054205;
 }
 
-.gcdDiv{
-    background-color:rgb(255, 249, 194);
-    color:#000000;
+.gcdDiv {
+  background-color: rgb(255, 249, 194);
+  color: #000000;
 }
 
 /* interactive elements */
 
 /* accordions */
-.accordionPlacement{
-    padding-top:4vh;
+.accordionPlacement {
+  padding-top: 4vh;
 }
 
 /* calculators / checkers */
-.finder{
-    padding-top:10vh;
-    padding-bottom:10vh;
+.finder {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
 }
 
 /* input styling */
-input{
-    width:15vh;
+input {
+  width: 15vh;
 }
 
 /* remove arrows from input boxes */
@@ -89,70 +89,70 @@ input::-webkit-inner-spin-button {
 
 /* explainer sections */
 
-.landingExplain{
-    background-color:rgb(245, 245, 255);
-    border-radius:3px;
-    margin-top:10vh;
-    padding:1vh;
+.landingExplain {
+  background-color: rgb(245, 245, 255);
+  border-radius: 3px;
+  margin-top: 10vh;
+  padding: 1vh;
 }
 
-.modExplain{
-    background-color:rgb(221, 252, 239);
-    border-radius:3px;
-    padding:1vh;
+.modExplain {
+  background-color: rgb(221, 252, 239);
+  border-radius: 3px;
+  padding: 1vh;
 }
 
-.primeExplain{
-    background-color:rgb(155, 154, 154);
-    border-radius:3px;
-    padding:1vh;
+.primeExplain {
+  background-color: rgb(155, 154, 154);
+  border-radius: 3px;
+  padding: 1vh;
 }
 
-.gcdExplain{
-    background-color:rgb(255, 248, 216);
-    border-radius:3px;
-    padding:1vh;
+.gcdExplain {
+  background-color: rgb(255, 248, 216);
+  border-radius: 3px;
+  padding: 1vh;
 }
 
 /* backgrounds */
 
 /* background divs */
-.background{
-    background-color: #cccccc;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: -1;
-    background-repeat: no-repeat;
-    background-size: cover;
+.background {
+  background-color: #cccccc;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* background image fading */
-.backgroundColor{
-    background-color: #ffffff;
-    background-size: cover;
-    opacity: 0.9;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: -1;
+.backgroundColor {
+  background-color: #ffffff;
+  background-size: cover;
+  opacity: 0.9;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -1;
 }
 
 /* background images */
 .primeBackground {
-    background-image: url("../assets/primeBackground.png");
+  background-image: url("../assets/primeBackground.png");
 }
 
 .modBackground {
-    background-image: url("../assets/modBackground.png");
+  background-image: url("../assets/modBackground.png");
 }
 
 .gdcBackground {
-    background-image: url("../assets/gcdBackground.png");
-    background-repeat: repeat;
-    background-size: auto;
+  background-image: url("../assets/gcdBackground.png");
+  background-repeat: repeat;
+  background-size: auto;
 }
