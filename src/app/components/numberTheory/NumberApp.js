@@ -5,7 +5,7 @@ import "../styles/numberApp.css";
 import Landing from "./Landing";
 import PrimeNumbers from "./PrimeNumbers";
 import GCD from "./GCDivisors";
-import ModularArithmetic from './ModularArithmetic';
+import ModularArithmetic from "./ModularArithmetic";
 
 // app that switches between topics based on state
 function NumberApp() {
@@ -18,20 +18,28 @@ function NumberApp() {
   function gcdClick() {
     setTopic("gcd");
   }
-  function modClick(){
+  function modClick() {
     setTopic("mod");
   }
+
+  // variables for classNames
+  const primeTab = "primeTab";
+  const gcdTab = "gcdTab";
+  const modTab = "modTab";
+  const tab = "tab";
 
   return (
     <div className="numberApp">
       <div>
-        <button className="primeButton" onClick={primeClick}>
+        <button className={`${primeTab} ${tab}`} onClick={primeClick}>
           Prime Numbers
         </button>
-        <button className="gcdButton" onClick={gcdClick}>
+        <button className={`${gcdTab} ${tab}`} onClick={gcdClick}>
           GCD
         </button>
-        <button className="modButton" onClick={modClick}>Modular Arithmetic</button>
+        <button className={`${modTab} ${tab}`} onClick={modClick}>
+          Modular Arithmetic
+        </button>
       </div>
       <Landing topic={topic} />
       <PrimeNumbers topic={topic} />

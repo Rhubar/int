@@ -11,7 +11,7 @@ export default function Nav() {
           <a href="/number">The Number Theory App</a>
         </li>
         <li>
-          <a href="/set">Set Operations</a>
+          <a href="/set">Set Operations(under construction)</a>
         </li>
       </ul>
     </div>

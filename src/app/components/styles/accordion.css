@@ -11,6 +11,7 @@
     margin: auto;
   }
   
+  /* +/- sign */
   .activeDiv {
     float:right;
     margin-top:-20px;

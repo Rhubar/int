@@ -1,18 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 function ModulusCalculator() {
-  const [number1, setNumber1] = useState('');
-  const [number2, setNumber2] = useState('');
-  const [result, setResult] = useState('');
+  const [number1, setNumber1] = useState("");
+  const [number2, setNumber2] = useState("");
+  const [result, setResult] = useState("");
 
-// when button is clicked, if number 1 & 2 are true, displays the modulus, 
-// else prompts user to input two numbers
+  // when button is clicked, if number 1 & 2 are true, displays the modulus,
+  // else prompts user to input two numbers
   const handleClick = () => {
     if (number1 && number2) {
       const modulus = parseInt(number1) % parseInt(number2);
       setResult(`Modulus: ${modulus}`);
     } else {
-      setResult('Please enter two numbers');
+      setResult("Please enter two numbers");
     }
   };
 
