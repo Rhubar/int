@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 // prime number checker
 function PrimeFinder() {
-  const [number, setNumber] = useState(0);
+  const [number, setNumber] = useState('');
   const [result, setResult] = useState("");
   //handler for user input, sets number state
   const handleChange = (event) => {
@@ -37,8 +37,9 @@ function PrimeFinder() {
 
   return (
     <div>
-      <input type="number" value={number} onChange={handleChange}></input>
+      <input type="number" value={number} onChange={handleChange} placeholder="enter number"></input>
       <button onClick={handleClick}>Check</button>
+      {/* displays result */}
       <p>{result}</p>
     </div>
   );

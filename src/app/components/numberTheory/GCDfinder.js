@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
 function GCDFinder() {
-  const [number1, setNumber1] = useState(0);
-  const [number2, setNumber2] = useState(0);
+  const [number1, setNumber1] = useState('');
+  const [number2, setNumber2] = useState('');
   const [gcd, setGcd] = useState(null);
 
   // finds the GCD using Euclid's algorithm
@@ -31,11 +31,13 @@ function GCDFinder() {
     <div>
       <input
         type="number"
+        placeholder="first number"
         value={number1}
         onChange={(e) => setNumber1(Math.round(e.target.value))}
       />
       <input
         type="number"
+        placeholder="second number"
         value={number2}
         onChange={(e) => setNumber2(Math.round(e.target.value))}
       />

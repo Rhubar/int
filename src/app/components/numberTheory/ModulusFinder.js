@@ -20,13 +20,13 @@ function ModulusCalculator() {
     <div>
       <input
         type="number"
-        placeholder="First number"
+        placeholder="first number"
         value={number1}
         onChange={(e) => setNumber1(e.target.value)}
       />
       <input
         type="number"
-        placeholder="Second number"
+        placeholder="second number"
         value={number2}
         onChange={(e) => setNumber2(e.target.value)}
       />

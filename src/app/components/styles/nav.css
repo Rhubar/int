@@ -1,5 +1,5 @@
 .navDiv{
-    background-color:grey;
+    background-color:rgb(141, 128, 158);
     padding:2vh;
     position:fixed;
     top:0;
@@ -16,4 +16,9 @@ ul {
   li {
     display: inline;
     padding: 2vh;
+  }
+
+  li:hover{
+    color:rgb(36, 11, 73);
+    padding-top: 1vh;
   }
