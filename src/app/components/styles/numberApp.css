@@ -42,6 +42,13 @@
   padding: 5px;
 }
 
+/* breakpoint for smaller screens */
+@media screen and (max-width: 600px) {
+  .mainDiv {
+    width:90vw;
+  }
+}
+
 .landingDiv {
   background-color: rgb(238, 230, 250);
   color: rgb(36, 11, 73);

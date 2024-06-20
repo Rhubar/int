@@ -17,10 +17,17 @@ ul {
 li {
   display:inline;
   padding: 2vh;
-
 }
 
 li:hover {
   color: rgb(36, 11, 73);
   padding-top: 1vh;
+}
+
+/* breakpoint for smaller screens */
+@media screen and (max-width: 600px) {
+  li {
+    font-size:smaller;
+    padding:1vw;
+  }
 }
