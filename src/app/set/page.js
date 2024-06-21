@@ -1,12 +1,29 @@
 "use client";
-import React from "react";
-import SetCard from "../components/set operations/SetCard";
+import React, { useState } from "react";
+import SetCard from "../components/setOperations/SetCard";
+import Venn from "../components/setOperations/Venn";
 import "./set.css";
 
 export default function Page() {
-  // card customization
-  const unionText =
-    "Combines elements from both sets, creating a new set of all distinct elements";
+  // state for venn diagram display
+  const [operation, setOperation] = useState("");
+
+  // onClick handlers
+  function compClick() {
+    setOperation("complement");
+  }
+  function unionClick() {
+    setOperation("union");
+  }
+  function interClick() {
+    setOperation("intersection");
+  }
+  function differenceClick() {
+    setOperation("difference");
+  }
+
+  // card text
+  const unionText = `Combines elements from both sets, creating a new set of all distinct elements`;
   const unionBottom = `A = 1, 2, 3, 4 and B = 3, 4, 5, 6`;
   const unionBottom2 = `A ∪ B = 1, 2, 3, 4, 5, 6`;
   const intersectionText = `Yields the set of common elements`;
@@ -39,39 +56,53 @@ export default function Page() {
           things like data structures and algorithms.
         </p>
       </div>
+      <div className="vennDiv">
+        <Venn operation={operation} />
+      </div>
+      <div className="setExplain">
+        <h4>Click on one of the cards below to see a visual representation in the Venn diagram</h4>
+      </div>
       <div className="cardContainer">
+        <div onClick={unionClick}>
+          <SetCard
+            color="lightcoral"
+            heading="Union"
+            symbol="∪"
+            text={unionText}
+            bottom={unionBottom}
+            bottom2={unionBottom2}
+          />
+        </div>
+        <div onClick={interClick}>
+          <SetCard
+            color="aquamarine"
+            heading="Intersection"
+            symbol="∩"
+            text={intersectionText}
+            bottom={intersectionBottom}
+            bottom2={intersectionBottom2}
+          />
+        </div>
+        <div onClick={differenceClick}>
+          <SetCard
+            color="darkslategray"
+            heading="Difference"
+            symbol="\"
+            text={differenceText}
+            bottom={differenceBottom}
+            bottom2={differenceBottom2}
+          />
+        </div>
+        <div onClick={compClick}>
         <SetCard
-          color="red"
-          heading="Union"
-          symbol="∪"
-          text={unionText}
-          bottom={unionBottom}
-          bottom2={unionBottom2}
-        />
-        <SetCard
-          color="blue"
-          heading="Intersection"
-          symbol="∩"
-          text={intersectionText}
-          bottom={intersectionBottom}
-          bottom2={intersectionBottom2}
-        />
-        <SetCard
-          color="green"
-          heading="Difference"
-          symbol="\"
-          text={differenceText}
-          bottom={differenceBottom}
-          bottom2={differenceBottom2}
-        />
-        <SetCard
-          color="yellow"
+          color="khaki"
           heading="Complement"
           symbol="ᶜ"
           text={complementText}
           bottom={complementBottom}
           bottom2={complementBottom2}
         />
+        </div>
       </div>
     </div>
   );

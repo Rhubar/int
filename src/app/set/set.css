@@ -2,6 +2,7 @@
     margin-top:45px;
     padding:5vh;
     text-align:center;
+    color:darkkhaki
 }
 
 .setHeading{
@@ -25,11 +26,19 @@
     color:rgb(36, 11, 73);
 }
 
+.vennDiv{
+  width:fit-content;
+  margin-top:5vh;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:5vh;
+}
+
 /* grid for cards */
 .cardContainer {
     display: grid;
     grid-template-columns: auto auto;
-    margin-top:10vh;
+    margin-top:5vh;
     padding: 10px;
     gap: 40px;
     width:fit-content;
@@ -37,3 +46,25 @@
     margin-right:auto;
   }
 
+
+  /* mobile */
+  @media screen and (max-width: 600px) {
+
+    .cardContainer {
+        grid-template-columns: auto;
+      }
+
+      .setExplain{
+        width:40vh;
+      }
+
+      .vennDiv img{
+        position: fixed;
+        width:130px;
+        height:80px;
+        right:0px;
+        z-index:9;
+        border-radius:5px;
+      }
+
+  }

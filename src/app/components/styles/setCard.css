@@ -6,6 +6,10 @@
     width: 30vh;
   }
 
+  .setCard :hover{
+    cursor:pointer;
+  }
+
   .cardHead{
     border:1px inset;
     padding:5px;

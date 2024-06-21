@@ -7,9 +7,9 @@ export default function Home() {
         <h2>Welcome to the Interactive Number Theory Playground!</h2>
       </div>
       <div className={styles.construction}>
-        <h1>Playground Under Construction</h1>
+        <h1>The playground is almost complete!</h1>
         <br />
-        <h2>The Number Theory App is done!</h2>
+        <h2>Just a bit of refactoring to go</h2>
       </div>
     </main>
   );
