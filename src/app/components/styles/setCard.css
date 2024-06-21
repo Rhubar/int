@@ -1,0 +1,30 @@
+.setCard {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 6px;
+    padding: 10px;
+    text-align: center;
+    width: 30vh;
+  }
+
+  .cardHead{
+    border:1px inset;
+    padding:5px;
+    margin-bottom:40px;
+    background-color:rgba(255, 255, 255, 0.5);
+    border-radius:4px;
+  } 
+  
+  .cardText{
+    border:1px inset;
+    padding:10px;
+    margin-bottom:60px;
+    background-color:rgba(255, 255, 255, 0.5);
+    border-radius:4px;
+  } 
+
+  .cardBottom{
+    border:1px inset;
+    padding:5px;
+    background-color:rgba(255, 255, 255, 0.5);
+    border-radius:4px;
+  }

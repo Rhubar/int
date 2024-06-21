@@ -1,0 +1,39 @@
+.setDiv {
+    margin-top:45px;
+    padding:5vh;
+    text-align:center;
+}
+
+.setHeading{
+    padding: 3vh;
+    width:fit-content;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius:6px;
+    background-color:rgb(238, 230, 250);
+    color:rgb(36, 11, 73);
+}
+
+.setExplain{
+    padding: 2vh;
+    width:80vh;
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius:6px;
+    background-color:rgb(238, 230, 250);
+    color:rgb(36, 11, 73);
+}
+
+/* grid for cards */
+.cardContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top:10vh;
+    padding: 10px;
+    gap: 40px;
+    width:fit-content;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
