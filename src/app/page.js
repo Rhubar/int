@@ -9,7 +9,7 @@ export default function Home() {
       <div className={styles.construction}>
         <h1>The playground is almost complete!</h1>
         <br />
-        <h2>Just a bit of refactoring to go</h2>
+        <h2>Just some finishing touches to go</h2>
       </div>
     </main>
   );
