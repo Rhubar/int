@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import SetCard from "../components/setOperations/SetCard";
 import Venn from "../components/setOperations/Venn";
-import "./set.css";
+import styles from "../page.module.css";
 
 export default function Page() {
   // state for venn diagram display
@@ -37,11 +37,13 @@ export default function Page() {
   const complementBottom2 = `Aᶜ = Everything apart from 1, 2, 3 and 4`;
 
   return (
-    <div>
-      <div className="setDiv">
-        <h2 className="setHeading">Set Operations</h2>
+    <div className={styles.main}>
+      <div className={styles.background}></div>
+      <div className={styles.backgroundColor}></div>
+      <div className={styles.heading}>
+        <h2>Set Operations</h2>
       </div>
-      <div className="setExplain">
+      <div className={styles.about}>
         <h4>What is a set?</h4>
         <br />
         <p>
@@ -56,13 +58,16 @@ export default function Page() {
           things like data structures and algorithms.
         </p>
       </div>
-      <div className="vennDiv">
+      <div className={styles.vennDiv}>
         <Venn operation={operation} />
       </div>
-      <div className="setExplain">
-        <h4>Click on one of the cards below to see a visual representation in the Venn diagram</h4>
+      <div className={styles.about}>
+        <h4>
+          Click on one of the cards below to see a visual representation in the
+          Venn diagram
+        </h4>
       </div>
-      <div className="cardContainer">
+      <div className={styles.cardContainer}>
         <div onClick={unionClick}>
           <SetCard
             color="lightcoral"
@@ -94,15 +99,18 @@ export default function Page() {
           />
         </div>
         <div onClick={compClick}>
-        <SetCard
-          color="khaki"
-          heading="Complement"
-          symbol="ᶜ"
-          text={complementText}
-          bottom={complementBottom}
-          bottom2={complementBottom2}
-        />
+          <SetCard
+            color="khaki"
+            heading="Complement"
+            symbol="ᶜ"
+            text={complementText}
+            bottom={complementBottom}
+            bottom2={complementBottom2}
+          />
         </div>
+      </div>
+      <div className={styles.vennDiv}>
+        <Venn operation={operation} />
       </div>
     </div>
   );

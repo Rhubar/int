@@ -1,9 +1,9 @@
-import "./about.css";
+import styles from "../page.module.css";
 
 export default function Page() {
   return (
-    <div>
-      <div className="about">
+    <div className={styles.main}>
+      <div className={styles.about}>
         <p>This is a portfolio project by Alexander Szwabowicz</p>
         <p>
           Check out the code on{" "}
@@ -14,11 +14,12 @@ export default function Page() {
           <a href="www.linkedin.com/in/alexander-szwabowicz">LinkedIn</a>
         </p>
       </div>
-      <div className="about">
-        <p>This is a project built in React.js using the Next.js framework</p>
+      <div className={styles.about}>
         <p>
-          It is a cool web-based interactive tool that allows users to explore
-          various number theory concepts and set operations
+          This is a project built in React.js using the Next.js framework
+          <br />
+          <br />
+          Optimised for desktop and mobile
         </p>
       </div>
     </div>

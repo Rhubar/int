@@ -1,104 +1,148 @@
+/* home page */
+
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  text-align:center;
+  text-align: center;
   padding: 6rem;
-  min-height: 70vh;
+  min-height: 100vh;
+  max-width: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(247, 245, 206);
 }
 
-.heading{
-  margin: 0;
-  padding: 2rem;
-  background-color:rgb(238, 230, 250);
-  color:rgb(36, 11, 73);
-  border-radius: var(--border-radius);
+.cheer {
+  margin-top: 30vh;
+  padding: 30px;
+  width: fit-content;
+  font-size: large;
+  text-align: center;
+  background-color: rgb(238, 230, 250);
+  color: rgb(36, 11, 73);
+  border-radius: 6px;
 }
 
-.set {
-  display: block;
-  flex-direction: row;
-  justify-content:space-around;
-  text-align:center;
-  min-height: 10vh;
-}
+/* number theory page */
 
-.description {
-  display: inherit;
-  flex-direction: inherit;
-  justify-content: inherit;
-  align-items: inherit;
-  font-size: 0.85rem;
-  max-width: var(--max-width);
-  width: 100%;
-  z-index: 2;
-}
-
-.description a {
+.numberPageMain {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  gap: 0.5rem;
+  padding: 6rem;
+  min-height: 100vh;
 }
 
-.description p {
-  position: relative;
-  margin: 0;
-  padding: 1rem;
-  background-color: rgba(var(--callout-rgb), 0.5);
-  border: 1px solid rgba(var(--callout-border-rgb), 0.3);
-  border-radius: var(--border-radius);
+/* set operations page */
+
+.setDiv {
+  padding-bottom: 5vh;
+  text-align: center;
 }
 
-.construction{
-  padding: 1rem;
-  background-color: rgba(var(--callout-rgb), 0.5);
-  border: 1px solid rgba(var(--callout-border-rgb), 0.3);
-  border-radius: var(--border-radius);
+.vennDiv {
+  width: fit-content;
+  margin-top: 5vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5vh;
 }
 
-.code {
-  font-weight: 700;
-  font-family: var(--font-mono);
-}
-
-.grid {
+/* grid for cards */
+.cardContainer {
   display: grid;
-  grid-template-columns: repeat(4, minmax(25%, auto));
-  max-width: 100%;
-  width: var(--max-width);
+  grid-template-columns: auto auto;
+  margin-top: 5vh;
+  padding: 10px;
+  gap: 40px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+/* about page */
 
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  padding: 4rem 0;
+.about {
+  padding: 15px;
+  margin-top: 8vh;
+  margin-bottom: 8vh;
+  width: fit-content;
+  font-size: large;
+  text-align: center;
+  background-color: rgb(238, 230, 250);
+  color: rgb(36, 11, 73);
+  border-radius: 6px;
 }
 
-.center::before {
-  background: var(--secondary-glow);
-  border-radius: 50%;
-  width: 480px;
-  height: 360px;
-  margin-left: -400px;
+.about a {
+  color: blue;
 }
 
-.center::after {
-  background: var(--primary-glow);
-  width: 240px;
-  height: 180px;
+.about p {
+  padding: 2vh;
+}
+
+/* background divs */
+
+.background {
+  background-color: #cccccc;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  background-image: url("./components/assets/mathBackground.png");
+}
+
+/* background image fading */
+.backgroundColor {
+  background-color: #ffffff;
+  background-size: cover;
+  opacity: 0.9;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
   z-index: -1;
 }
 
-.center::before,
-.center::after {
-  content: "";
-  left: 50%;
-  position: absolute;
-  filter: blur(45px);
-  transform: translateZ(0);
+.heading {
+  margin: 0;
+  padding: 2rem;
+  background-color: rgb(238, 230, 250);
+  color: rgb(36, 11, 73);
+  border-radius: 6px;
+}
+
+/* mobile */
+@media screen and (max-width: 600px) {
+  .cardContainer {
+    grid-template-columns: auto;
+  }
+
+  .vennDiv{
+    position: fixed;
+    width: 130px;
+    height: 90px;
+    right: 0px;
+    z-index: 9;
+    border-radius: 5px;
+  }
+
+  .vennDiv img {
+    position: fixed;
+    width: 130px;
+    height: 80px;
+    right: 0px;
+    top: 25vh;
+    z-index: 9;
+    border-radius: 5px;
+  }
+
+  .main {
+    padding: 55px;
+  }
 }
