@@ -9,6 +9,12 @@ Check it out here! [Interactive Number Theory Playground](https://int-neon.verce
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Contents
+
+1. Installation
+2. Usage
+3. Credits
+
 ## Getting Started
 
 First install the dependencies,
@@ -22,3 +28,17 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 or check it out in production! thanks vercel
 
 ## https://int-neon.vercel.app/
+
+## Usage
+From the navigation bar at the top, click on what you want to see
+Each section has clear instructions 
+The number theory app will allow you to enter one or two numbers and perform a relevent function
+![image](https://github.com/Rhubar/int/assets/162736510/a066a49a-80be-47a8-b924-3c9e609daace)
+The set operations page displays information as you click
+![image](https://github.com/Rhubar/int/assets/162736510/512adbc6-e000-4846-adb4-304d31c29da5)
+
+
+
+
+## Credits
+Alexander Szwabowicz (me)
