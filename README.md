@@ -1,7 +1,9 @@
 ## Welcome to the [Interactive Number Theory Playground](https://int-neon.vercel.app/)
 
 This is the Interactive Number Theory Playground portfolio project - a web-based interactive tool that allows users to explore various number theory concepts 
-(prime numbers, greatest common divisors, modular arithmetic) and set operations (union, intersection, difference, complement).
+(prime numbers, greatest common divisors, modular arithmetic) and set operations (union, intersection, difference, complement)
+
+It's a fun educational web app, made with default CSS styling, responsive design and simplicity in mind
 
 Check it out here! [Interactive Number Theory Playground](https://int-neon.vercel.app/)
 
